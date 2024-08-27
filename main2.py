@@ -2,17 +2,8 @@
 import math
 from mod import calculate_money  # Імпортуємо функцію з модуля
 
-# Функція 1
-def calculate_z(alpha):
-    cos_alpha = math.cos(math.radians(alpha))
-    z = cos_alpha**2 + cos_alpha**4
-    return z
-
 def main():
     while True:
-        alpha = float(input("Введіть значення α (в градусах): "))
-        z = calculate_z(alpha)
-        print(f"Значення z = cos^2(α) + cos^4(α) дорівнює: {z:.4f}")
 
         styp = float(input("Введіть розмір щомісячної стипендії (грн): "))
         vytr = float(input("Введіть розмір щомісячних витрат на проживання (грн): "))
